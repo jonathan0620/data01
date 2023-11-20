@@ -9,7 +9,7 @@ public class 배열결과리스트에넣기 {
 		int[] n = {100, 200, 300, 400, 500};
 		
 		//1. 전체 목록 프린트
-		System.out.println(Arrays.toString(n));
+		Print.arr(n);
 		//2. 300이상 값이 몇 개인지 카운트해서 프린트
 		int count = 0;
 		ArrayList<Integer> list = new ArrayList<Integer>();
@@ -29,9 +29,15 @@ public class 배열결과리스트에넣기 {
 			n[index] = n[index] - 100; // n[index] -= 100;
 		}
 		
+//		for (int i = 0; i < list.size(); i++) {
+//			n[i] = n[i] - 100;
+//		}
+		
 		//5. 수정된 배열 전체 프린트
 		
-		System.out.println(Arrays.toString(n));
+		
+		Print.arr(n); // System.out.println(Arrays.toString(n));
+					// 긴 코드를 자주 사용하니, print 클래스 만들어서 간단하게 사용.
 	}
 
 }
